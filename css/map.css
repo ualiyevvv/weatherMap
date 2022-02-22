@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    height: calc(100vh - 100px);
+}
+#map{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.search {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    z-index: 11499;
+    top: 10px;
+    left: 60px;
+}
+.search-input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid silver;
+    outline-color: #257eca;
+}
+button {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: #257eca;
+    color: white;
+}
+button:hover {
+    background-color: #2374bb;
+}
+
+
+.my-card {
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.city {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: medium;
+}
+.temp {
+    font-size: 26px;
+    font-weight: medium;
+}
+.icon {
+    width: 50px;
+}
+.humidity {
+    margin-bottom: 5px;
+}
+.description {
+    text-transform: capitalize;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.my-popup {
+    background-color: rgba(0, 0, 0, .85);
+}
+.my-popup .my-card {
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.card {
+    width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, .85);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search-input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+button {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-left: 5px;
+}
+.city {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: medium;
+}
+.temp {
+    font-size: 32px;
+    font-weight: medium;
+}
+.icon {
+    width: 50px;
+}
+.humidity {
+    margin-bottom: 5px;
+}
+.description {
+    text-transform: capitalize;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
